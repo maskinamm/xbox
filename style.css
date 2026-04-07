@@ -233,17 +233,3 @@ header {
     opacity: 0.8;
 }
 
-/* Адаптивность */
-@media (max-width: 900px) {
-    .highlights-grid {
-        flex-direction: column;
-    }
-    
-    .highlights-title {
-        font-size: 36px;
-    }
-    
-    .highlights-title span {
-        font-size: 28px;
-    }
-}
