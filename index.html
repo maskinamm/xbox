@@ -1,44 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Маскина</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div class="header container">
-        <!-- Логотип -->
-        <a href="index.html" class="logo-link">
-          <img src="./img/logo.svg" alt="logo" class="logo-img" />
-        </a>
-
-        <!-- Навигация -->
-        <nav class="nav">
-          <a href="#">Games</a>
-          <a href="#">Consoles</a>
-          <a href="#">Community</a>
-        </nav>
-
-        <!-- Правая секция -->
-        <div class="right-section">
-          <!-- Поиск в виде формы -->
-          <form action="" method="get" class="search-form">
-            <input
-              name="s"
-              placeholder="Search"
-              type="search"
-              class="search-input"
-            />
-          </form>
-
-          <!-- My XBOX -->
-          <div class="my-xbox">
-            <img src="./img/user.svg" alt="user" class="profile-icon" />
-            <span>My XBOX</span>
-          </div>
-        </div>
+      <div class="header-container">
+        <a href="#"><img src="./img/xbox.png" alt="" /></a>
+        <ul class="nav-list">
+          <li>
+            <a href="#">Games</a><img src="./img/down-arrow.png" alt="" />
+          </li>
+          <li>
+            <a href="#">Consoles</a><img src="./img/down-arrow.png" alt="" />
+          </li>
+          <li><a href="#">Community</a></li>
+          <input
+            type="text"
+            class="search-input"
+            name="username"
+            placeholder="Search"/>
+          <li>
+            <a href="#"><img src="./img/user.png" alt="" /> My XBOX</a
+            > <img src="./img/down-arrow.png" alt="" />
+          </li>
+        </ul>
       </div>
     </header>
   </body>

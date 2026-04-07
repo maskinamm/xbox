@@ -1,104 +1,68 @@
+
 @font-face {
   font-family: "HelveticaNeueR";
   src: url(./fonts/HelveticaNeue-Roman.otf);
 }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 :root {
-  --font-family: "HelveticaNeueR", sans-serif;
+  --font-family: "HelveticaNeue", sans-serif;
 }
-
-body {
-  --font-family: "HelveticaNeueR", sans-serif;
-  background: #fff;
-}
-
-header {
-  background-color: #373a3c;
-}
-
 .container {
   max-width: 1130px;
-  margin: 0 auto;
   padding: 0 10px;
+  margin: 0 auto;
+}
+header {
+  background: #373a3c;
+  border-bottom: 3px solid #979797;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+}
+
+.header-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-
-.header {
-  height: 60px;
-}
-
-.logo-link {
+.header-container li {
   display: flex;
   align-items: center;
-  text-decoration: none;
-  flex-shrink: 0;
+  gap: 6px;
+  cursor: pointer;
 }
-
-.logo-img {
-  width: 96px;
-  height: 29px;
-}
-
-.nav {
-  display: flex;
-  gap: 45px;
-  margin: 0 20px;
-}
-
-.nav a {
+.header-container a {
   text-decoration: none;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
-  color: #fff;
-  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.5);
 }
-
-.nav a:hover {
-  text-decoration: underline;
-}
-
-.right-section {
+.nav-list {
   display: flex;
   align-items: center;
-  gap: 30px;
-  flex-shrink: 0;
+  gap: 32px;
+  list-style: none;
+  flex-wrap: wrap;
 }
-
-.search {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.search-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.my-xbox {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.search-input {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: var(--font-family);
+  font-size: 14px;
   color: white;
-  cursor: pointer;
-  font-size: 16px;
-  white-space: nowrap;
-  font-family: var(--font-family);
-  font-weight: 400;
-  line-height: 100%;
+  outline: none;
+  width: 160px;
 }
 
-.profile-icon {
-  width: 24px;
-  height: 24px;
-}
