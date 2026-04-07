@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "HelveticaNeueR";
   src: url(./fonts/HelveticaNeue-Roman.otf);
@@ -66,3 +65,82 @@ header {
   width: 160px;
 }
 
+
+/* Hero секция */
+.hero {
+    background-image: url('./img/1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 648px;
+    position: relative;
+}
+
+/* Контейнер */
+.hero-container {
+    position: relative;
+    z-index: 2;
+    height: 648px;
+}
+
+/* Заголовок Star Wars */
+.hero-title {
+    position: absolute;
+    top: 175px;
+    right: 100px;          /* Остаётся справа */
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+    text-align: left;      /* Текст внутри выровнен влево */
+    width: 100%;           /* Добавлено для правильного выравнивания */
+    max-width: 300px;      /* Ограничиваем ширину */
+}
+
+/* Подзаголовок Battlefront II */
+.hero-subtitle {
+    position: absolute;
+    top: 215px;
+    right: 100px;          /* Остаётся справа */
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    text-align: left;      /* Текст внутри выровнен влево */
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Кнопки */
+.hero-buttons {
+    position: absolute;
+    top: 400px;
+    right: 100px;          /* Остаётся справа */
+    display: flex;
+    gap: 13px;
+}
+
+.btn {
+    width: 136px;
+    height: 38px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Первая кнопка Watch Trailer */
+.btn-primary {
+    background-color: #8DD83D;
+    color: white;
+}
+
+/* Вторая кнопка Explore Games */
+.btn-secondary {
+    background-color: #686C6F;
+    color: white;
+}
